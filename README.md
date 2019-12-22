@@ -18,3 +18,5 @@
     git pull
 #### 두 저장소 병합 허가 옵션
     git pull –allow-unrelated-histories
+#### 원격 저장소 제거
+    git remote remove origin
