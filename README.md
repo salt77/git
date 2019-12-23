@@ -20,3 +20,5 @@
     git pull –allow-unrelated-histories
 #### 원격 저장소 제거
     git remote remove origin
+#### 파일 삭제
+    git rm {file} or git rm --cached {file}
