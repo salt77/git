@@ -30,6 +30,6 @@
     git reset --mixed HEAD^  //위와 동일
     git reset HEAD~2  //마지막 2개의 파일을 취소
     git reset --soft HEAD^  //commit을 취소하고 해당 파일들은 staged 상태로 보존  
-    git reset --haer HEAD^  //commit을 취소하고 해당 파일들을 삭제
+    git reset --hard HEAD^  //commit을 취소하고 해당 파일들을 삭제
 #### commit 메세지 변경
     git commit --amend ""
