@@ -1,6 +1,6 @@
 ## git-usage
 
-### 순서대로 정리
+### 처음 생성
 #### 1. git init
     git init 명령어를 사용해서 로컬저장소 설정
 #### 2. git add {file} or *
@@ -12,6 +12,12 @@
 #### 5. git push {원격저장소 이름} {브랜치 이름}
     끝
     
+### 파일 삭제
+#### 1. 저장소에서 삭제
+    git rm -r {file} or git rm -r --cached {file}
+#### 2. commit 및 push
+    git commit -m "" 
+    git push ~ ~
 
 ### 명령어
 
@@ -36,6 +42,7 @@
     git remote remove origin
 #### 파일 삭제
     git rm {file} or git rm --cached {file}
+    git rm -r //하위 파일도 모두 삭제
 #### add한 파일들 Unstage로 변경
     git reset HEAD {file}
     파일명이 없다면 모든 파일 Unstage
