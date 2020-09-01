@@ -19,6 +19,15 @@
     git commit -m "" 
     git push ~ ~
 
+### 브랜치 생성, 변경, 삭제
+#### 생성 
+    git branch {name}, git branch만 치면 브랜치 현황 확인
+#### 변경
+    git checkout {name}
+#### 삭제
+    git branch -d {name}
+    git push origin {name}
+
 ### 명령어
 
 #### 로컬 저장소 생성
