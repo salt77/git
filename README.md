@@ -65,3 +65,15 @@
     git commit --amend ""
 #### 복사 및 붙여넣기
     Ctrl + Insert,  Shift + Insert
+#### 고용량 파일 업로드  
+    1. 해당 Repository에서 git lfs install  
+    2. 100MB가 넘는 파일 git lfs track "*.확장자"  
+    3. 이후 다시 Commit  
+    3-1. Commit 로그에 이미 고용량 파일이 존재한다면 BFG Repo_Cleaner 적용을 해야 한다.
+    3-2. java -jar bfg-1.14.0.jar --strip-blobs-bigger-than 100M  입력.  
+    3-3. 혹시 에러 발생 시 git repack && git gc 입력.
+    3-4. git push 재시도  
+
+#### git reset HEAD^가 안 먹힐 경우  
+    git update-ref -d HEAD  
+    git rm --cached -r .  
